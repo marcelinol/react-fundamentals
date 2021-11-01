@@ -15,7 +15,7 @@ function UsernameForm({onSubmitUsername}) {
 
   function handleSubmit(event) {
     event.preventDefault()
-    onSubmitUsername(usernameInputRef.current.value)
+    onSubmitUsername(username)
   }
 
   return (
@@ -26,7 +26,6 @@ function UsernameForm({onSubmitUsername}) {
           onChange={handleChange}
           id="usernameInput"
           type="text"
-          ref={usernameInputRef}
           value={username}
         />
       </div>
